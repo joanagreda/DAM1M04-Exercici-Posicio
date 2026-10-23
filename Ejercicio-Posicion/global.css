@@ -1,13 +1,9 @@
-/* =========================================
-   ESTILOS GENERAL
-========================================= */
+
 body {
-    margin: 0;/* Quita el margen blanco*/
-    padding: 0; /*Quita el espacio interior*/
+    margin: 0;
+    padding: 0;
 }
-/* =========================================
-    BARRA DE NAVEGACIÓN (ul)
-========================================= */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -19,12 +15,6 @@ ul {
     display: flex;
     justify-content: center;
 }
-
-/*
-ul li {
-}
-Flexbox ya hace el trabajo */
-
 
 ul li a {
     display: block;
@@ -40,9 +30,41 @@ background-color: #555555;
 color: white;
 }
 
-/* =========================================
-   CONTENIDO PRINCIPAL
-========================================= */
+/*Contenido Principal*/
 .contenido-principal {
-    margin-top: 70px; /* Empuja el contenido hacia abajo para que el menú no lo tape */
+    margin-top: 70px;
+}
+
+/*Contenedor Centrado con max-width*/
+.contenedor { 
+    /*El sitio web será mas ancho que esto*/
+    max-width: 1200px;
+    /*Centrara automaticamente la caja del medio de la pantalla*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Estilos de la caja principal*/
+.hero {
+    text-align: center; /*Centrado del texto*/
+    background-color: #f1f1f1; /*Color de fondo*/
+    padding: 60px 20px; /*Espaciado interno*/
+    border-radius: 10px; /*Esquinas redondeadas*/
+}
+
+/* Estilo del botón - Llamativo (cridander) */
+.boton-cridaner {
+    background-color: #007bff; /*Azul brillante*/
+    color: white; /*Texto blanco*/
+    border: none; /*Quita el borde negro feo*/
+    padding: 15px 30px; /*Enguresa y facilidad al clicar */
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer; /*sale una mano al pasar el ratón por encima*/
+    margin-top: 20px; /*Separa el botón de texto de arriba*/
+}
+
+/*Al pasar el ratón por el botón, se vuelve más oscuro*/
+.boton-cridaner:hover {
+    background-color: #0056b3
 }
