@@ -1,36 +1,48 @@
-/*Estilos de la Barra de navegación*/
-
-/*Primer Bloque UL
-Especifica un ancho fijo de (200px) 
-*/
+/* =========================================
+   ESTILOS GENERAL
+========================================= */
+body {
+    margin: 0;/* Quita el margen blanco*/
+    padding: 0; /*Quita el espacio interior*/
+}
+/* =========================================
+    BARRA DE NAVEGACIÓN (ul)
+========================================= */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
     background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-/*Segundo Bloque (ul)
-(li a) aplica estilso a los elementos
-<a> dentro de los elementos <li>
-Mostrara los enelaces como elemntos de bloque
-haciendo que toda el área sea clicable. No especifica 
-el ancho, relleno, margen, altura,etc.
-Añado un color al enlace y un poco de relleno.
-Elimino el subrayado con <a>
-*/
-li a {
+/*
+ul li {
+}
+Flexbox ya hace el trabajo */
+
+
+ul li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-/*3er Bloque*/
-/*Cambiara el color del enlace y del fondo 
-al pasar el cursor */
-li a:hover {
+
+
+ul li a:hover {
 background-color: #555555; 
 color: white;
+}
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+========================================= */
+.contenido-principal {
+    margin-top: 70px; /* Empuja el contenido hacia abajo para que el menú no lo tape */
 }
