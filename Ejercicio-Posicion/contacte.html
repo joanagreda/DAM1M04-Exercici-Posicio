@@ -20,32 +20,61 @@
     <!--Contenido principal de la página -->
     <main class="contenido-principal">
         <!--Pagina Estilo blog del ejemplo 11-->
+     <div class="autoContainer">
+            <h1>Contactanos!!</h1>
+            <p class="explicación">
+                ¿Tienes alguna duda sobre nuestras cartas, quieres hacer un pedido especial?
+                o simplemente comprar las cartas al mayoreo rellena el siguiente formulario y te responderemos lo antes posible.
+            </p>
+        </div>    
+        <!--Layout con Grid-->
+    <div class="contenedor">
+        <div class="layout-contacto">
+            <!---Primer Layout Detallado-->
+            <div class="formulario">
+                <h2>Escribenos</h2>
+                <form>
+                    <label>Nombre Completo:</label>
+                    <input type="text" placeholder="Ej: Subaru Natsuki" required>
+                    
+                    <label>Correo Electrónico:</label>
+                    <input type="email" placeholder="reinhard01santoespada@gmail.com" required>
 
+                    <label>Teléfono (opcional):</label>
+                    <input type="tel" placeholder="Ej: +591 620 859 201">                       
 
-    <div class="autoContainer">
-        <h1>Contactanos!!</h1>
-        <p class="explicación">
-            Lo sentimos, pero actualmente no tenemos un formulario de contacto 
-            disponible en nuestro sitio web. Sin embargo, puedes comunicarte 
-            con nosotros a través de los siguientes medios:
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit.Sed euismod, nunc utlaoreet tincidunt, 
-            nunc nisl aliquam nunc, eget aliquam nisl nunc vel
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit. Sed euismod, nunc utlaoreet tincidunt, 
-            nunc nisl aliquam nunc, eget aliquam nisl nunc vel
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit. Sed euismod, nunc utlaoreet tincidunt, 
-            nunc nisl aliquam nunc, eget aliquam nisl nunc vel  
-        </p>
-    </div>        
+                    <label>Motivo de contacto:</label>
+                    
+                    <select>
+                        <option value="Pregunta">Alguna pregunta sobre el producto</option>
+                        <option value="pedido">Estado de mi pedido</option>
+                        <option value="colaboracion">Colaboracion / Mayorista</option>
+         
+                        <option value="otro">Otro Asunto</option>
+                    
+                    </select>
+
+                    <label>¿Que carta te intersa más? (Le notificaremos si aun la tenemos en neustros alamcenes)</label>
+                    <div class="opciones-check">
+                        <label><input type="checkbox">Subaru Natsuki</label>
+                        <label><input type="checkbox">Reinhard Van Astrea</label>
+                        <label><input type="checkbox">Satella</label>
+                        <label><input type="checkbox">Todas XD</label>
+                    </div>
+
+                    <label>Mensaje:</label>
+                    <textarea placeholder="En que podemos ayudarte, describenos tu mensaje detalladamente'..." required></textarea>
+                    <div class="opciones-check" style="margin-top: 15px;">
+                        <label>
+                            <input type="checkbox" required>Acepto la política de privacidad y el tratamiento de mis datos personales.">
+                        </label>
+                    </div>
+
+                    <button type="submit" class="boton-cridaner" style="width: 100%; margin-top: 20px;">Enviar mensaje</button>                    
+                </form>
+            </div>
+        </div>
+    </div>   
 
     </main>
     <!-- Pie de página - Footer -->
