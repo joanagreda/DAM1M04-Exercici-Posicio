@@ -1,3 +1,142 @@
+/*Estilo del index*/
+ /* 1. El Hero (la caja de arriba) */
+        .hero {
+            text-align: center;
+            /* Le pongo un degradado azul suave para que llame la atencion */
+            background: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%);
+            padding: 60px 20px;
+            border-radius: 12px; /* Bordes redondeados */
+            margin-top: 20px;
+            margin-bottom: 50px; /* Separacion con las colecciones */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra para que resalte */
+            border: 1px solid #90caf9;
+        }
+
+        .hero h1 {
+            font-size: 42px; /* Titulo bien grande */
+            color: #0d47a1;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto 30px auto; /* Lo centro y le doy margen abajo */
+            line-height: 1.5;
+        }
+
+        /* 2. El titulo de la seccion de colecciones */
+        .titulo-seccion {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* 3. Contenedor de las 3 tarjetas. Uso flex para ponerlas en fila */
+        .colecciones {
+            display: flex;
+            flex-wrap: wrap; /* Para que salten de linea si la pantalla es pequeña */
+            gap: 25px; /* Separacion entre tarjetas */
+            margin-bottom: 50px;
+            justify-content: center; /* Las centro en la pantalla */
+        }
+
+        /* 4. Estilo de cada tarjeta individual */
+        .carta-info {
+            flex: 1 1 240px; /* Se adaptan al espacio */
+            max-width: 260px; /* Tope de ancho para que no se estiren */
+            background: white;
+            border-radius: 10px;
+            /* Quito el padding de arriba para que la imagen pegue con el borde */
+            padding: 0 0 20px 0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s; /* Para hacer una animacion al pasar el raton */
+            border: 1px solid #eee;
+            overflow: hidden; /* Para que la imagen no se salga de la tarjeta */
+            text-align: center;
+        }
+
+        /* Efecto cuando pasas el raton por encima de la tarjeta */
+        .carta-info:hover {
+            transform: translateY(-5px); /* La tarjeta sube un poquito */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* La sombra se hace mas grande */
+        }
+
+        /* 5. El div que envuelve la imagen (el marco) */
+        .marco-imagen {
+            width: 100%;
+            height: 320px; /* Altura fija del marco */
+            background-color: #f0f0f0; /* Fondo gris por si la foto no llena el hueco */
+            display: flex; /* Flex para centrar la foto dentro del marco */
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        /* La foto dentro del marco */
+        .marco-imagen img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* IMPORTANTE: para que la carta se vea entera y no se recorte */
+            border-radius: 4px;
+        }
+
+        /* 6. Textos de dentro de las tarjetas */
+        .carta-info h3 {
+            margin: 0 15px 10px 15px;
+            color: #007bff;
+            font-size: 20px;
+        }
+
+        .carta-info p {
+            margin: 0 15px 15px 15px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* 7. Las etiquetas (span) */
+        .etiqueta {
+            background: #e3f2fd;
+            color: #0d47a1;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0 3px;
+            display: inline-block;
+            border: 1px solid #90caf9;
+        }
+
+        /* 8. La banda de beneficios de abajo */
+        .beneficios {
+            display: flex; /* Para ponerlos en horizontal */
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            background: #1a1a2e; /* Fondo oscuro */
+            color: white;
+            padding: 25px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+
+        /* Cada uno de los textos de los beneficios */
+        .beneficios span {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.1); /* Un fondo transparente para separarlos */
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+    
 body {
     margin: 0;
     padding: 0;
