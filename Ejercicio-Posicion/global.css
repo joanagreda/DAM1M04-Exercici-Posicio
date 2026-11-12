@@ -67,6 +67,102 @@ color: white;
 }
 
 /*Esitlo de la pagina de contacto*/
-/*En el primer apartado de la pagina tendra un estilo
-como un estilo de Blog como el ejemplo 9*/
+/* Recuadro estilo blog del principio */
+        .autoContainer {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .explicación {
+            color: red;
+        }
+
+        /* Grid de 2 columnas (Pide el enunciado) */
+        .layout-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+            gap: 30px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .formulario, .info-contacto {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .formulario label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Inputs y textarea del formulario */
+        .formulario input[type="text"], 
+        .formulario input[type="email"],
+        .formulario input[type="tel"],
+        .formulario select,
+        .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .formulario textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .opciones-check {
+            margin-top: 10px;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .opciones-check label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .opciones-check input {
+            margin-right: 5px;
+        }
+
+        /* Mapa ficticio (caja gris) */
+        .mapa {
+            background: #ccc;
+            height: 200px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* Adaptación a móviles */
+        @media (max-width: 700px) {
+            .layout-contacto {
+                grid-template-columns: 1fr;
+            }
+        }
+
 
