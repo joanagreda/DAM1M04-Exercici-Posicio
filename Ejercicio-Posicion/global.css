@@ -166,3 +166,75 @@ color: white;
         }
 
 
+        /*Estilo de la pagina de productos*/
+
+        /*.filtros {* 1. La barra de filtros de arriba */
+        .filtros {
+            text-align: center; /* Centra los botones de filtro */
+            margin: 20px 0; /* Espacio arriba y abajo */
+        }
+
+        /* 2. Los botones (span) de la barra de filtros */
+        .filtros span {
+            display: inline-block; /* Pone los botones en línea, uno al lado del otro */
+            padding: 8px 15px; /* Espacio interior para que parezcan botones */
+            margin: 5px; /* Separación entre ellos */
+            background: white; /* Fondo blanco */
+            border: 1px solid #ccc; /* Borde gris fino */
+            border-radius: 15px; /* Bordes muy redondeados (forma de pastilla) */
+            cursor: pointer; /* Sale la mano al pasar por encima */
+            font-size: 14px;
+        }
+
+        /* 3. Efecto al pasar el ratón por encima de los filtros */
+        .filtros span:hover {
+            background: #007bff; /* Cambia a azul */
+            color: white; /* El texto se pone blanco */
+        }
+
+        /* 4. El contenedor de las tarjetas (Grid con Flex) */
+        .productos {
+            display: flex; /* Activa Flexbox */
+            flex-wrap: wrap; /* Muy importante: permite que las tarjetas salten de línea si no caben */
+            gap: 20px; /* Espacio de separación entre tarjetas */
+            justify-content: center; /* Centra todas las tarjetas en la pantalla */
+            padding-bottom: 40px; /* Espacio extra al final para que no pegue con el footer */
+        }
+
+        /* 5. Cada tarjeta individual (caja con imagen, nombre y precio) */
+        .tarjeta {
+            flex: 1 1 260px; /* Pide el enunciado: crece, se encoge y tiene una base de 260px */
+            max-width: 280px; /* Tope máximo para que no se vean gigantes en pantallas grandes */
+            background: white; /* Fondo blanco */
+            border: 1px solid #ddd; /* Borde gris suave */
+            border-radius: 8px; /* Bordes redondeados */
+            padding: 15px; /* Espacio interior */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para que resalte */
+            text-align: center; /* Centra el texto (nombre y precio) */
+        }
+
+        /* 6. La imagen de la carta */
+        .img-carta {
+            width: 100%; /* Ocupa todo el ancho de la tarjeta */
+            height: 350px; /* Altura fija para que todas las cartas midan lo mismo */
+            object-fit: cover; /* Recorta la imagen sin deformarla si no encaja perfecta */
+            border-radius: 6px; /* Bordes redondeados en la imagen */
+            margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+        }
+
+        /* 7. El título de la carta (el <h3>) */
+        .tarjeta h3 {
+            font-size: 16px; /* Tamaño de letra un poco más pequeño */
+            margin: 10px 0 5px 0; /* Espacio arriba y abajo */
+            color: #333; /* Color gris oscuro */
+        }
+
+        /* 8. El precio */
+        .precio {
+            color: #007bff; /* Color azul para que destaque */
+            font-weight: bold; /* Texto en negrita */
+            font-size: 18px; /* Letra más grande */
+            margin-top: 5px;
+        }
+
+        
